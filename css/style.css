@@ -1,0 +1,169 @@
+/* General Settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333333; /* Dark text color for light mode */
+    display: flex;
+    flex-direction: column; /* Enable flexbox layout */
+    min-height: 100vh; /* Ensure body takes at least full height */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header {
+    background-color: #ffffff; /* White header background */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.profile-icon {
+    width: 20%; /* Adjust icon size */
+    max-width: 100px; /* Upper limit for large screens */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid #00b5e2; /* Lighter Go color */
+    transition: transform 0.3s ease-in-out;
+    margin-right: 20px; /* Space between icon and text */
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-links {
+    margin-top: 10px; /* Space between header content and links */
+}
+
+.social-links a {
+    color: #00b5e2; /* Lighter Go color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+section {
+    padding: 50px 0;
+    flex: 1; /* Allow the section to expand and push footer down */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+#projects {
+    background-color: #f0f0f0; /* Light background color for projects */
+}
+
+/* Badge Styling */
+.badge {
+    display: inline-block;
+    background-color: #8a2be2; /* Purple for Lua */
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-left: 10px; /* Space between project name and badge */
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Java Badge Styling */
+.java-badge {
+    background-color: #b07219; /* Brown for Java */
+}
+
+
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    background-color: #ffffff; /* White background for project cards */
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #00b5e2; /* Lighter Go color */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #00b5e2; /* Lighter Go color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #007acc;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color for dark mode */
+}
+
+header.dark-mode {
+    background-color: #1e1e1e; /* Dark header background */
+}
+
+.project-card.dark-mode {
+    background-color: #282828; /* Dark background for project cards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-icon {
+        width: 30%; /* Adjust icon size for smaller screens */
+    }
+
+    .social-links a {
+        margin: 0 5px; /* Adjust space for smaller screens */
+    }
+}
+
