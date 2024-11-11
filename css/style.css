@@ -88,6 +88,10 @@ h1, h2 {
     background-color: #b07219;
 }
 
+.go-badge {
+    background-color: #00ADD8;
+}
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;
