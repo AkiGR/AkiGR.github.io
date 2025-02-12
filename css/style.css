@@ -90,6 +90,9 @@ h2 {
 .java-badge {
   background-color: #b07219;
 }
+.go-badge {
+  background-color: #00add8;
+}
 
 .project-grid {
   display: flex;
